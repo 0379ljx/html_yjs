@@ -1,0 +1,397 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>内容页模板</title><meta name="pageType" content="3">
+
+<meta name="Description" content="研究生处部门-乐山师范学院" />
+<script src="js/TouchSlide.1.1.js"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/offcanvas.css" rel="stylesheet">
+<!--Announced by Visual SiteBuilder 9-->
+<link rel="stylesheet" type="text/css" href="css/_sitegray_d.css" />
+<script language="javascript" src="js/_sitegray.js"></script>
+<link rel="stylesheet" type="text/css" href="css/erjinry.vsb.css" />
+<script type="text/javascript" src="js/vsbscreen.min.js" id="_vsbscreen" devices="pc|pad"></script>
+<script type="text/javascript" src="js/counter.js"></script>
+<script type="text/javascript">_jsq_(1245,'/erjinry.jsp',11920,1351386606)</script>
+</head>
+<body>
+  <div><script language="javascript" src="js/dynclicks.js"></script>   
+  </SCRIPT></div>
+  <div class="dingyou-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-xs-12"><a href="" target=""> 欢迎访问乐山师范研究生部门!       </a></div>
+      
+        <div class="col-lg-4 sc">
+   <a target="_blank" href="">学校主页</a> | <a target="_blank" href="">管理系统登录</a> 
+  </a></div>
+      </div>
+    </div>
+  </div>
+  <div class="logo-container">
+    <div class="departments">
+      <a href="#" class="department">党委研究生工作部</a>
+      <a href="#" class="department">研究生处</a>
+      <a href="#" class="department">学科建设与发展规划处</a>
+      <a href="#" class="department">武汉大学对口支援办公室</a>
+    </div>
+  </div>
+  <div class="dingyou-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-xs-12">
+          <div class="logo"><a href="index.html" target=""><img border="0" src="images/logo.png" alt="研究生处部门-乐山师范学院"></a></div>
+        </div>
+        <div class="col-lg-6">
+          <div class="dingyou-search">
+  
+  
+  <script language="javascript" src="js/base64.js"></script><script language="javascript" src="js/jquery-latest.min.js"></script><script language="javascript" src="js/vue.js"></script><script language="javascript" src="js/bluebird.min.js"></script><script language="javascript" src="js/axios.js"></script><script language="javascript" src="js/polyfill.js"></script><script language="javascript" src="js/token.js"></script><LINK href="css/index.css" type="text/css" rel="stylesheet"><script language="javascript" src="js/index.js"></script><script language="javascript" src="js/public.js"></script><style>
+      #appu2 .qwss{
+          height: 31px;
+          font-size: 12px;
+          min-width: 190px;
+          max-width: 600px;
+          width: 60%;
+          margin-top: -15px;
+          outline: none;
+          padding-left: 10px;
+          border-radius: 2px;
+          border: 1px solid #e4e7ed;}
+      #appu2 .tj{
+          padding-left: 6px;
+          letter-spacing: 5px;
+          color: white;
+          min-width: 53px;
+          max-width: 150px;
+          height: 32px;
+          border: 0;
+          border-radius: 2px;
+          background-color: #1890FF;
+          position: relative;
+          top: 1px;
+          width: 20%;
+          margin-top: -15px;}
+  </style>
+  <div id="divu2"></div>
+  <script type="text/html" id="htmlu2">
+      <div id="appu2">
+          <div v-if="!isError">
+              <input type="text" class="input-medium search-query dingyou-search-txt" placeholder="全文搜索" autocomplete=off v-model=query.keyWord @keyup.enter="onSubmit">
+              <input class="dingyou-search-btn" name="submit_button" type="button" value="" v-on:click="onSubmit()"/>
+          </div>
+          <div v-if="isError" style="color: #b30216; font-size:18px;text-align: center;padding:20px;">
+              应用维护中！
+          </div>
+      </div>
+  </script>
+  <script>
+      $("#divu2").html($("#htmlu2").text());
+  </script>
+  <script>
+      var appOwner = "1351386606";
+      var token = gettoken(10);
+      var urlPrefix = "/aop_component/";
+  
+      jQuery.support.cors = true;
+      $.ajaxSetup({
+          beforeSend: function (request, settings) {
+              request.setRequestHeader("Authorization", token);
+              request.setRequestHeader("owner", appOwner);
+          }
+      });
+  
+      new Vue({
+          el: "#appu2",
+          data: function () {
+              return {
+                  query: {
+                      keyWord: "",//搜索关键词
+                      owner: appOwner,
+                      token: token,
+                      urlPrefix: urlPrefix,
+                      lang:"i18n_zh_CN"
+                  },
+                  isError: false
+              }
+          },
+          mounted: function () {
+              var _this = this;
+              // _this.init();
+          },
+          methods: {
+              init: function(){
+                  $.ajax({
+                      url: "",
+                      type: "get",
+                      success: function (response) {
+                          if (response.code == "0000") {
+                          } else if (response.code == "220") {
+                              _this.isError = true;
+                              console.log(response);
+                          } else if (!response.code) {
+                              _this.isError = true;
+                              console.log(response);
+                          }
+                      },
+                      error: function (response) {
+                          _this.isError = true;
+                      }
+                  });
+              },
+              onSubmit: function (e) {
+                  var url = "";
+                  if ("10" == "1" || "10" == "2") {
+                      url = "" + url;
+                  }
+                  var _this = this;
+                  var query = _this.query;
+                  if (url.indexOf("?") > -1) {
+                      url = url.split("?")[0];
+                  }
+                  if (query.keyWord) {
+                      var query = new Base64().encode(JSON.stringify(query));
+                      window.open(url + "?query=" + query);
+                  } else {
+                      alert("请填写搜索内容")
+                  }
+              },
+          }
+      })
+  </script></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="dingyou-navbar">
+    <div class="container">
+      <div class="row">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse"> <span class="sr-only">切换导航</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        </div>
+        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+          <ul class="nav navbar-nav"><li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">学校首页<b class=""></b></a>
+   
+  </li>
+  <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">部门概况<b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="">部门介绍    </a></li>
+      <li><a href="">部门职责  </a></li>
+      <li><a href="">科室设置    </a></li>
+    </ul>
+  </li>
+  <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">学科建设  <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="">学科概况
+      </a></li>
+      <li><a href="">重点学科
+      </a></li>
+      <li><a href="">规章制度
+      </a></li>
+      <li><a href="">学位点申报
+      </a></li>
+      <li><a href="">硕士学位点
+      </a></li>
+      <li><a href="">贡嘎计划学科
+      </a></li>
+    </ul>
+  </li>
+  
+  <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">招生工作<b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="">招生动态</a></li>
+      <li><a href="">招生简章</a></li>
+      <li><a href="">招生咨询</a></li>
+      
+    </ul>
+  </li>
+  <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">培养工作<b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="">通知公告
+      </a></li>
+      <li><a href="">培养方案
+      </a></li>
+      <li><a href="">教学管理
+      </a></li>
+      <li><a href="">专业实践
+      </a></li>
+      <li><a href="">规章制度
+      </a></li>
+      <li><a href="">导师工作
+      </a></li>
+  
+    </ul>
+  </li>
+  <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">学位工作<b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="">通知公告
+      </a></li>
+      <li><a href="">学位申请
+      </a></li>
+      <li><a href="">学位授予
+      </a></li>
+      <li><a href="">论文抽检
+      </a></li>
+      <li><a href="">规章制度
+      </a></li>
+      <li><a href="">优秀论文评选
+      </a></li>
+   
+    </ul>
+  </li>
+  <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">学生工作  <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="">通知公告</a></li>
+      <li><a href="">思政教育
+      </a></li>
+      <li><a href="">研究生会
+      </a></li>
+      <li><a href="">奖助管理
+      </a></li>
+      <li><a href="">研工动态
+      </a></li>
+      <li><a href="">校园文化
+      </a></li>
+      <li><a href="">规章制度
+      </a></li>
+      
+    </ul>
+  </li>
+  <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">就业与档案<b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="">通知公告
+      </a></li>
+      <li><a href="">就业创业
+      </a></li>
+      <li><a href="">招聘信息
+      </a></li>
+      <li><a href="">档案工作
+      </a></li>
+      <li><a href="">规章制度
+      </a></li>
+     
+    </ul>
+  </li>
+  <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">下载中心  <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="">学生工作
+      </a></li>
+      <li><a href="">导师相关
+      </a></li>
+      <li><a href="">综合工作
+      </a></li>
+      <li><a href="">招生录取相关
+      </a></li>
+      <li><a href="">学籍培养相关</a></li>
+      <li><a href="">学位监督工作</a></li>
+      <li><a href="">学科建设工作</a></li>
+    </ul>
+  </li>
+  </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="dingyou-content" id="dingyou-a1">
+  <div class="container">
+    <div class="row row-offcanvas row-offcanvas-right">
+    <div class="col-lg-3 sidebar-offcanvas" id="sidebar">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+
+
+
+部门概况</div>
+          <div class="panel-body">
+            <ul class="list-unstyled"><li class="margin-b-10"> <a class="parents-link" href="">部门介绍</a></li>  
+<li class="margin-b-10"> <a class="parents-link" href="">部门职责</a></li>  
+<li class="margin-b-10"> <a class="parents-link" href="">科室设置</a></li>  
+ 
+</ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="dingyou-site">当前位置：
+   <a href="index.htm">网站首页</a> 
+  >>
+   <a href="">下一级</a> 
+  >>
+   <a href="">下一级</a> 
+  >>
+   <a href="">xx下一级</a> 
+  >>
+  
+  正文
+</div>
+        <div class="dingyou-article">
+        <span class="pull-right visible-sm visible-md visible-xs">
+            <button type="button" class="btn btn-primary btn-sm btn-md btn-xs" data-toggle="offcanvas">
+
+
+
+部门概况</button>
+            </span>
+          
+
+<script language="javascript" src="js/dynclicks.js"></script><script language="javascript" src="js/NewsvoteDWR.js"></script><script language="javascript" src="js/engine.js"></script><script language="javascript" src="js/newscontent.js"></script><script language="javascript" src="js/ajax.js"></script><form name="_newscontent_fromname">
+<div>
+    <h1 class="dingyou-h1">研究生处部门-乐山师范学院-内容区</h1>
+    <div class="dingyou-article-xx"> <span class="dingyou-article-xx-time">时间：2024-9-23</span> <span class="dingyou-article-xx-ly">编辑：xxx</span> <span class="dingyou-article-xx-dj">点击：<script>_showDynClicks("wbnews", 1351386606, 11920)</script></span> </div>
+    <div id="vsb_content"><div class="v_news_content">
+<p style="margin-top:0;margin-bottom:10px"><span style="font-family: 宋体, SimSun; background: rgb(255, 255, 255); font-size: 16px;">研究生处部门-乐山师范学院-内容区</span></p>
+<span style="background: rgb(255, 255, 255); font-family: 宋体, SimSun; font-size: 16px;"><span style="font-size: 16px; background: rgb(255, 255, 255); font-family: 宋体;">&nbsp; &nbsp; &nbsp; &nbsp; 研究生处部门-乐山师范学院-内容区</span></span></p>
+<p style="margin-top: 0px; margin-bottom: 10px; text-indent: 352px; line-height: 35px; text-align: right;"><span style="font-family: 宋体, SimSun; background: rgb(255, 255, 255); font-size: 16px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<span style="background: rgb(255, 255, 255); font-size: 16px; font-family: 宋体;">2024年9月</span>23<span style="background: rgb(255, 255, 255); font-size: 16px; font-family: 宋体;">日&nbsp;</span></span></p>
+<p><br></p>
+</div></div><div id="div_vote_id"></div>
+    
+    <p>
+        <UL style="list-style-type:none;"> 
+            <li>附件【<a href="" target="_blank">附件1：xxx</a>】已下载<span id="nattach4944453"><script language="javascript">getClickTimes(4944453,1351386606,"wbnewsfile","attach")</script></span>次</li>
+            <li>附件【<a href="" target="_blank">附件2：xxx</a>】已下载<span id="nattach4944454"><script language="javascript">getClickTimes(4944454,1351386606,"wbnewsfile","attach")</script></span>次</li>
+            
+        </UL>
+    </p>
+    <p align="right">【<a href="javascript:window.opener=null;window.open('','_self');window.close();">关闭</a>】</p>
+</div>
+</form>
+
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<div class="dingyou-copyright">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-xs-12 pl">版权所有 &#169; 研究生处部门-乐山师范学院 您是第<script language="javascript" src="js/engine.js"></script><script language="javascript" src="js/util.js"></script><script language="javascript" src="js/PageCounterDWR.js"></script><span id="a1015912" name="a1015912"></span>    
+
+<script>
+function getvisittimea1015912()
+{       
+    PageCounterDWR.getVisittime('1351386606','1245','IP_TOTAL','854321','10',callbackdataa1015912)
+}
+function callbackdataa1015912(data)
+{
+    document.getElementById("a1015912").innerHTML = data; 
+}
+getvisittimea1015912();
+</script>位访客！</div>
+      <div class="col-lg-6 col-xs-12 pr"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1277835830'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s96.cnzz.com/stat.php%3Fid%3D1277835830%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script></div>
+    </div>
+  </div>
+</div>
+<script src="js/jquery-3.2.1.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/all.js"></script> 
+<script src="js/offcanvas.js"></script>
+</body>
+</html>

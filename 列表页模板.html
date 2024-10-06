@@ -1,0 +1,423 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>研究生处部门-乐山师范学院</title><meta name="pageType" content="2">
+<meta name="pageTitle" content="研究生处部门-乐山师范学院">
+<META Name="keywords" Content="研究生处部门-乐山师范学院" />
+
+
+<meta name="Description" content="研究生处部门-乐山师范学院" />
+<script src="js/TouchSlide.1.1.js"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/offcanvas.css" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="css/_sitegray_d.css" />
+<script language="javascript" src="js/_sitegray.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/ejlist.vsb.css" />
+<script type="text/javascript" src="js/vsbscreen.min.js" id="_vsbscreen" devices="pc|pad"></script>
+<script type="text/javascript" src="js/counter.js"></script>
+<script type="text/javascript">_jsq_(1335,'/ejlist.jsp',-1,1351386606)</script>
+</head>
+<body>
+
+  <div><script language="javascript" src="js/dynclicks.js"></script>   
+  </SCRIPT></div>
+  <div class="dingyou-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-xs-12"><a href="" target="">欢迎访问乐山师范研究生部门!      </a></div>
+      
+        <div class="col-lg-4 sc">
+          <a target="_blank" href="">学校主页</a> | <a target="_blank" href="">管理系统登录</a> 
+  </a></div>
+      </div>
+    </div>
+  </div>
+  <div class="logo-container">
+    <div class="departments">
+      <a href="#" class="department">党委研究生工作部</a>
+      <a href="#" class="department">研究生处</a>
+      <a href="#" class="department">学科建设与发展规划处</a>
+      <a href="#" class="department">武汉大学对口支援办公室</a>
+    </div>
+  </div>
+  <div class="dingyou-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-xs-12">
+          <div class="logo"><a href="index.html" target=""><img border="0" src="images/logo.png" alt="研究生处部门-乐山师范学院"></a></div>
+        </div>
+        <div class="col-lg-6">
+          <div class="dingyou-search">
+  
+  
+  <script language="javascript" src="js/base64.js"></script><script language="javascript" src="js/jquery-latest.min.js"></script><script language="javascript" src="js/vue.js"></script><script language="javascript" src="js/bluebird.min.js"></script><script language="javascript" src="js/axios.js"></script><script language="javascript" src="js/polyfill.js"></script><script language="javascript" src="js/token.js"></script><LINK href="css/index.css" type="text/css" rel="stylesheet"><script language="javascript" src="js/index.js"></script><script language="javascript" src="js/public.js"></script><style>
+      #appu2 .qwss{
+          height: 31px;
+          font-size: 12px;
+          min-width: 190px;
+          max-width: 600px;
+          width: 60%;
+          margin-top: -15px;
+          outline: none;
+          padding-left: 10px;
+          border-radius: 2px;
+          border: 1px solid #e4e7ed;}
+      #appu2 .tj{
+          padding-left: 6px;
+          letter-spacing: 5px;
+          color: white;
+          min-width: 53px;
+          max-width: 150px;
+          height: 32px;
+          border: 0;
+          border-radius: 2px;
+          background-color: #1890FF;
+          position: relative;
+          top: 1px;
+          width: 20%;
+          margin-top: -15px;}
+  </style>
+  <div id="divu2"></div>
+  <script type="text/html" id="htmlu2">
+      <div id="appu2">
+          <div v-if="!isError">
+              <input type="text" class="input-medium search-query dingyou-search-txt" placeholder="全文搜索" autocomplete=off v-model=query.keyWord @keyup.enter="onSubmit">
+              <input class="dingyou-search-btn" name="submit_button" type="button" value="" v-on:click="onSubmit()"/>
+          </div>
+          <div v-if="isError" style="color: #b30216; font-size:18px;text-align: center;padding:20px;">
+              应用维护中！
+          </div>
+      </div>
+  </script>
+  <script>
+      $("#divu2").html($("#htmlu2").text());
+  </script>
+  <script>
+      var appOwner = "1351386606";
+      var token = gettoken(10);
+      var urlPrefix = "/aop_component/";
+  
+      jQuery.support.cors = true;
+      $.ajaxSetup({
+          beforeSend: function (request, settings) {
+              request.setRequestHeader("Authorization", token);
+              request.setRequestHeader("owner", appOwner);
+          }
+      });
+  
+      new Vue({
+          el: "#appu2",
+          data: function () {
+              return {
+                  query: {
+                      keyWord: "",//搜索关键词
+                      owner: appOwner,
+                      token: token,
+                      urlPrefix: urlPrefix,
+                      lang:"i18n_zh_CN"
+                  },
+                  isError: false
+              }
+          },
+          mounted: function () {
+              var _this = this;
+              // _this.init();
+          },
+          methods: {
+              init: function(){
+                  $.ajax({
+                      url: "",
+                      type: "get",
+                      success: function (response) {
+                          if (response.code == "0000") {
+                          } else if (response.code == "220") {
+                              _this.isError = true;
+                              console.log(response);
+                          } else if (!response.code) {
+                              _this.isError = true;
+                              console.log(response);
+                          }
+                      },
+                      error: function (response) {
+                          _this.isError = true;
+                      }
+                  });
+              },
+              onSubmit: function (e) {
+                  var url = "";
+                  if ("10" == "1" || "10" == "2") {
+                      url = "" + url;
+                  }
+                  var _this = this;
+                  var query = _this.query;
+                  if (url.indexOf("?") > -1) {
+                      url = url.split("?")[0];
+                  }
+                  if (query.keyWord) {
+                      var query = new Base64().encode(JSON.stringify(query));
+                      window.open(url + "?query=" + query);
+                  } else {
+                      alert("请填写搜索内容")
+                  }
+              },
+          }
+      })
+  </script></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="dingyou-navbar">
+    <div class="container">
+      <div class="row">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse"> <span class="sr-only">切换导航</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        </div>
+        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+          <ul class="nav navbar-nav"><li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">学校首页<b class=""></b></a>
+   
+  </li>
+  <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">部门概况<b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="">部门介绍    </a></li>
+      <li><a href="">部门职责  </a></li>
+      <li><a href="">科室设置    </a></li>
+    </ul>
+  </li>
+  <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">学科建设  <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="">学科概况
+      </a></li>
+      <li><a href="">重点学科
+      </a></li>
+      <li><a href="">规章制度
+      </a></li>
+      <li><a href="">学位点申报
+      </a></li>
+      <li><a href="">硕士学位点
+      </a></li>
+      <li><a href="">贡嘎计划学科
+      </a></li>
+    </ul>
+  </li>
+  
+  <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">招生工作<b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="">招生动态</a></li>
+      <li><a href="">招生简章</a></li>
+      <li><a href="">招生咨询</a></li>
+      
+    </ul>
+  </li>
+  <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">培养工作<b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="">通知公告
+      </a></li>
+      <li><a href="">培养方案
+      </a></li>
+      <li><a href="">教学管理
+      </a></li>
+      <li><a href="">专业实践
+      </a></li>
+      <li><a href="">规章制度
+      </a></li>
+      <li><a href="">导师工作
+      </a></li>
+  
+    </ul>
+  </li>
+  <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">学位工作<b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="">通知公告
+      </a></li>
+      <li><a href="">学位申请
+      </a></li>
+      <li><a href="">学位授予
+      </a></li>
+      <li><a href="">论文抽检
+      </a></li>
+      <li><a href="">规章制度
+      </a></li>
+      <li><a href="">优秀论文评选
+      </a></li>
+   
+    </ul>
+  </li>
+  <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">学生工作  <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="">通知公告</a></li>
+      <li><a href="">思政教育
+      </a></li>
+      <li><a href="">研究生会
+      </a></li>
+      <li><a href="">奖助管理
+      </a></li>
+      <li><a href="">研工动态
+      </a></li>
+      <li><a href="">校园文化
+      </a></li>
+      <li><a href="">规章制度
+      </a></li>
+      
+    </ul>
+  </li>
+  <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">就业与档案<b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="">通知公告
+      </a></li>
+      <li><a href="">就业创业
+      </a></li>
+      <li><a href="">招聘信息
+      </a></li>
+      <li><a href="">档案工作
+      </a></li>
+      <li><a href="">规章制度
+      </a></li>
+     
+    </ul>
+  </li>
+  <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">下载中心  <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="">学生工作
+      </a></li>
+      <li><a href="">导师相关
+      </a></li>
+      <li><a href="">综合工作
+      </a></li>
+      <li><a href="">招生录取相关
+      </a></li>
+      <li><a href="">学籍培养相关</a></li>
+      <li><a href="">学位监督工作</a></li>
+      <li><a href="">学科建设工作</a></li>
+    </ul>
+  </li>
+  </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="dingyou-content" id="dingyou-a1">
+  <div class="container">
+    <div class="row row-offcanvas row-offcanvas-right">
+    <div class="col-lg-3 sidebar-offcanvas" id="sidebar">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+
+
+
+部门概况</div>
+          <div class="panel-body">
+            <ul class="list-unstyled">
+<li class="margin-b-10"> <a class="parents-link" href="">部门介绍</a></li>  
+<li class="margin-b-10"> <a class="parents-link" href="">部门职责</a></li>  
+<li class="margin-b-10"> <a class="parents-link" href="">科室设置</a></li>  
+
+</ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="dingyou-site">当前位置：
+   <a href="index.htm">网站首页</a> 
+  >>
+   <a href="">部门概况</a> 
+   <!-- 灵活设置 -->
+  >>
+   <a href="">下一级</a> 
+  >>
+   <a href="">下一级</a> </div>
+        <div class="dingyou-list">
+         <span class="pull-right visible-sm visible-md visible-xs">
+         <button type="button" class="btn btn-primary btn-sm btn-md btn-xs" data-toggle="offcanvas">
+
+
+
+部门概况</button>
+         </span>
+          <h1 class="dingyou-h2">
+
+
+
+通知公告</h1>
+          <div class="dingyou-list-c">
+            <ul><script language="javascript" src="js/centerCutImg.js"></script><script language="javascript" src="js/dynclicks.js"></script><script language="javascript" src="js/ajax.js"></script>
+<li id="line_u8_0"><a target="_blank" href="">列表页-主题内容</a> <span>[2024/09/23]</span></li>        
+    <span id="section_u8_0" style="display:none;"><hr style="height:1px;border:none;border-top:1px dashed #CCCCCC;"></span>
+<li id="line_u8_1"><a target="_blank" href="">列表页-主题内容</a> <span>[2024/09/23]</span></li>        
+    <span id="section_u8_1" style="display:none;"><hr style="height:1px;border:none;border-top:1px dashed #CCCCCC;"></span>
+<li id="line_u8_3"><a target="_blank" href="">列表页-主题内容</a> <span>[2024/09/23]</span></li>        
+    <span id="section_u8_3" style="display:none;"><hr style="height:1px;border:none;border-top:1px dashed #CCCCCC;"></span>
+<li id="line_u8_4"><a target="_blank" href="">列表页-主题内容</a> <span>[2024/09/23]</span></li>        
+    <span id="section_u8_4" style="display:none;"><hr style="height:1px;border:none;border-top:1px dashed #CCCCCC;"></span>
+<li id="line_u8_5"><a target="_blank" href="">列表页-主题内容</a> <span>[2024/09/23]</span></li>        
+    <span id="section_u8_5" style="display:none;"><hr style="height:1px;border:none;border-top:1px dashed #CCCCCC;"></span>
+<li id="line_u8_6"><a target="_blank" href="">列表页-主题内容</a> <span>[2024/09/23]</span></li>        
+    <span id="section_u8_6" style="display:none;"><hr style="height:1px;border:none;border-top:1px dashed #CCCCCC;"></span>
+<li id="line_u8_7"><a target="_blank" href="">列表页-主题内容</a> <span>[2024/09/23]</span></li>        
+    <span id="section_u8_7" style="display:none;"><hr style="height:1px;border:none;border-top:1px dashed #CCCCCC;"></span>
+<li id="line_u8_8"><a target="_blank" href="">列表页-主题内容</a> <span>[2024/09/23]</span></li>        
+    <span id="section_u8_8" style="display:none;"><hr style="height:1px;border:none;border-top:1px dashed #CCCCCC;"></span>
+<li id="line_u8_9"><a target="_blank" href="">列表页-主题内容</a> <span>[2024/09/23]</span></li>        
+    <span id="section_u8_9" style="display:none;"><hr style="height:1px;border:none;border-top:1px dashed #CCCCCC;"></span>
+<li id="line_u8_10"><a target="_blank" href="">列表页-主题内容</a> <span>[2024/09/23]</span></li>        
+    <span id="section_u8_10" style="display:none;"><hr style="height:1px;border:none;border-top:1px dashed #CCCCCC;"></span>
+<p><br /></p>
+<div align="center"><INPUT TYPE="hidden" NAME="actiontype" VALUE=""><input type="hidden" name="_scode_" value="1727141460367"><input type="hidden" name="urltype" value="tree.TreeTempUrl"><input type="hidden" name="wbtreeid" value="1335"><input type="hidden" name="outFlag" value="false">
+<style type="text/css">
+.headStyle22wzj25bfu, .headStyle22wzj25bfu td, .headStyle22wzj25bfu div {font-size: 12px;font-family:宋体; color: #000000; margin-left: auto; margin-right: auto; line-height:14px;}
+.defaultButtonStyle {font-size: 12px;font-family:宋体; height:20px;color: #000000;BORDER: #AFD5F5 1px solid; margin: 0px;padding: 0px; FILTER:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#ffffff, EndColorStr=#BDDBF7);  CURSOR: pointer; line-height:14px;background:-webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#BDDBF7));background: -moz-linear-gradient( top,#ffffff,#BDDBF7);background:-ms-linear-gradient(top,#ffffff 0%,#bddbf7 100%);}
+.defaultinputStyle {font-size: 12px;font-family:宋体; height:20px; border:1px solid #AFD5F5; line-height:14px;}
+.colHeader {font-size: 12px;font-family:宋体; line-height:14px;}
+.headStyle22wzj25bfu a, .pageList .this-page {font-size: 12px;font-family:宋体; display:inline-block; height:14px; padding: 2px 4px; border: solid 1px #AFD5F5; background: #fff; text-decoration: none; MARGIN-RIGHT: 1px;line-height:14px;}
+.headStyle22wzj25bfu a:visited {font-size: 12px;font-family:宋体; color: #000000; text-decoration: none; line-height:14px;}
+.headStyle22wzj25bfu .PrevDisabled {font-size: 12px;font-family:宋体; display:inline-block;height:14px;  margin-right: 3px; padding: 2px 4px; background: #fff;color:#ccc;border: solid 1px #AFD5F5; line-height:14px;}
+.headStyle22wzj25bfu .SelectList {font-size: 12px;font-family:宋体;line-height:14px;}
+.headStyle22wzj25bfu .Prev { font-size: 12px;font-family:宋体; margin-right: 3px; padding: 2px 4px;line-height:14px;}
+.headStyle22wzj25bfu .break {font-size: 12px;font-family:宋体; border: none; text-decoration: none; line-height:14px;}
+.headStyle22wzj25bfu .NextDisabled { font-size: 12px;font-family:宋体;display:inline-block; height:14px; margin-left: 2px; padding: 2px 4px;background: #fff;color:#ccc;border: solid 1px #AFD5F5; line-height:14px;}
+.headStyle22wzj25bfu .Next { font-size: 12px;font-family:宋体; margin-left: 2px; padding: 2px 4px;line-height:14px;}
+.headStyle22wzj25bfu .this-page {font-size: 12px;font-family:宋体;display:inline-block;height:14px;padding: 2px 4px; border: solid 1px #AFD5F5; background: #E1F0FD; font-weight: bold; color:black; MARGIN-RIGHT: 1px;line-height:14px;}
+.headStyle22wzj25bfu a:hover {font-size: 12px;font-family:宋体;color: black; background: #EFF7FE; border-color: #AFD5F5; text-decoration: none;line-height:14px;}
+.headStyle22wzj25bfu a:link {font-size: 12px;font-family:宋体;color: #000000; text-decoration: none;line-height:14px;}
+.headStyle22wzj25bfu a:active { font-size: 12px;font-family:宋体;color: black; text-decoration: none; background: #EFF7FE; line-height:14px;}
+</style><script language="javascript" src="js/gotopage.js"></script><script type="text/javascript">function a216453_gopage_fun(){_simple_list_gotopage_fun(2,'a216453GOPAGE',2)}</script><table cellspacing="0" cellpadding="0" border="0"><TR><td colspan="0"><table cellspacing="0" class="headStyle22wzj25bfu" width="100%" cellpadding="1"><tr valign="middle"><TD nowrap align="left" width="1%" id="fanye216453">共xx条&nbsp;&nbsp;1/2&nbsp;</td><td nowrap align="left"><div><span class="PrevDisabled">首页</span><span class="PrevDisabled">上页</span><a href="" class="Next">下页</a><a href="" class="Next">尾页</a>&nbsp;&nbsp;<input align="absmiddle" type="button" class="defaultButtonStyle" id="gotopagebut" name="a216453Find" value="转到" onclick="javascript:a216453_gopage_fun()"><INPUT size="2" align="absmiddle" class="defaultInputStyle" NAME="a216453GOPAGE" id="a216453GOPAGE" VALUE="" style="margin-left:1px;margin-right:1px">页</div></td></tr></table></table></div><script>_showDynClickBatch(['dynclicks_u8_29285','dynclicks_u8_28755','dynclicks_u8_28475','dynclicks_u8_28155','dynclicks_u8_25615','dynclicks_u8_25125','dynclicks_u8_24955','dynclicks_u8_24275','dynclicks_u8_23905','dynclicks_u8_23335','dynclicks_u8_23065','dynclicks_u8_20575','dynclicks_u8_20525','dynclicks_u8_20445','dynclicks_u8_19805','dynclicks_u8_19625','dynclicks_u8_19205','dynclicks_u8_18755','dynclicks_u8_18395','dynclicks_u8_17565','dynclicks_u8_16975','dynclicks_u8_16255','dynclicks_u8_12795','dynclicks_u8_12745','dynclicks_u8_12715','dynclicks_u8_12185','dynclicks_u8_12063','dynclicks_u8_12030','dynclicks_u8_11974','dynclicks_u8_11945'],[29285,28755,28475,28155,25615,25125,24955,24275,23905,23335,23065,20575,20525,20445,19805,19625,19205,18755,18395,17565,16975,16255,12795,12745,12715,12185,12063,12030,11974,11945],"wbnews", 1351386606)</script></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="dingyou-copyright">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-xs-12 pl">版权所有 &#169; 研究生处部门-乐山师范学院 您是第<script language="javascript" src="js/engine.js"></script><script language="javascript" src="js/util.js"></script><script language="javascript" src="js/PageCounterDWR.js"></script><span id="a1015912" name="a1015912"></span>   
+
+<script>
+function getvisittimea1015912()
+{       
+    PageCounterDWR.getVisittime('1351386606','1335','IP_TOTAL','854321','10',callbackdataa1015912)
+}
+function callbackdataa1015912(data)
+{
+    document.getElementById("a1015912").innerHTML = data; 
+}
+getvisittimea1015912();
+</script>位访客！</div>
+      <div class="col-lg-6 col-xs-12 pr"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1277835830'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s96.cnzz.com/stat.php%3Fid%3D1277835830%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script></div>
+    </div>
+  </div>
+</div>
+<script src="js/jquery-3.2.1.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/all.js"></script> 
+<script src="js/offcanvas.js"></script>
+</body>
+</html>

@@ -1,0 +1,970 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>研究生处部门-乐山师范学院</title><meta name="pageType" content="1">
+<meta name="pageTitle" content="研究生处部门-乐山师范学院">
+<META Name="keywords" Content="研究生处部门-乐山师范学院" />
+
+
+<meta name="Description" content="研究生处部门-乐山师范学院" />
+<script src="js/TouchSlide.1.1.js"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<!--Announced by Visual SiteBuilder 9-->
+<link rel="stylesheet" type="text/css" href="css/_sitegray_d.css" />
+<script language="javascript" src="js/_sitegray.js"></script>
+<link rel="stylesheet" type="text/css" href="css/index.vsb.css" />
+<script type="text/javascript" src="js/vsbscreen.min.js" id="_vsbscreen" devices="pc|pad"></script>
+<script type="text/javascript" src="js/counter.js"></script>
+<!-- <script type="text/javascript">_jsq_(1230,'/index.jsp',-1,1351386606)</script> -->
+</head>
+<body>
+<div><script language="javascript" src="js/dynclicks.js"></script>   
+</SCRIPT></div>
+<div class="dingyou-top">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-xs-12"><a href="" target=""> 欢迎访问乐山师范研究生部门!     </a></div>
+    
+      <div class="col-lg-4 sc">
+<a target="_blank" href="">学校主页</a> </a> | <a target="_blank" href="">管理系统登录
+</a></div>
+    </div>
+  </div>
+</div>
+<div class="logo-container">
+  <div class="departments">
+    <a href="#" class="department">党委研究生工作部</a>
+    <a href="#" class="department">研究生处</a>
+    <a href="#" class="department">学科建设与发展规划处</a>
+    <a href="#" class="department">武汉大学对口支援办公室</a>
+  </div>
+</div>
+<div class="dingyou-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-xs-12">
+
+     
+        <div class="logo"><a href="index.html" target=""><img border="0" src="images/logo.png" alt="研究生处部门-乐山师范学院"></a></div>
+      </div>
+      <div class="col-lg-6">
+        <div class="dingyou-search">
+
+
+<script language="javascript" src="js/base64.js"></script><script language="javascript" src="js/jquery-latest.min.js"></script><script language="javascript" src="js/vue.js"></script><script language="javascript" src="js/bluebird.min.js"></script><script language="javascript" src="js/axios.js"></script><script language="javascript" src="js/polyfill.js"></script><script language="javascript" src="js/token.js"></script><LINK href="css/index.css" type="text/css" rel="stylesheet"><script language="javascript" src="js/index.js"></script><script language="javascript" src="js/public.js"></script><style>
+    #appu2 .qwss{
+        height: 31px;
+        font-size: 12px;
+        min-width: 190px;
+        max-width: 600px;
+        width: 60%;
+        margin-top: -15px;
+        outline: none;
+        padding-left: 10px;
+        border-radius: 2px;
+        border: 1px solid #e4e7ed;}
+    #appu2 .tj{
+        padding-left: 6px;
+        letter-spacing: 5px;
+        color: white;
+        min-width: 53px;
+        max-width: 150px;
+        height: 32px;
+        border: 0;
+        border-radius: 2px;
+        background-color: #1890FF;
+        position: relative;
+        top: 1px;
+        width: 20%;
+        margin-top: -15px;}
+</style>
+<div id="divu2"></div>
+<script type="text/html" id="htmlu2">
+    <div id="appu2">
+        <div v-if="!isError">
+            <input type="text" class="input-medium search-query dingyou-search-txt" placeholder="全文搜索" autocomplete=off v-model=query.keyWord @keyup.enter="onSubmit">
+            <input class="dingyou-search-btn" name="submit_button" type="button" value="" v-on:click="onSubmit()"/>
+        </div>
+        <div v-if="isError" style="color: #b30216; font-size:18px;text-align: center;padding:20px;">
+            应用维护中！
+        </div>
+    </div>
+</script>
+<script>
+    $("#divu2").html($("#htmlu2").text());
+</script>
+<script>
+    var appOwner = "1351386606";
+    var token = gettoken(10);
+    var urlPrefix = "";
+
+    jQuery.support.cors = true;
+    $.ajaxSetup({
+        beforeSend: function (request, settings) {
+            request.setRequestHeader("Authorization", token);
+            request.setRequestHeader("owner", appOwner);
+        }
+    });
+
+    new Vue({
+        el: "#appu2",
+        data: function () {
+            return {
+                query: {
+                    keyWord: "",//搜索关键词
+                    owner: appOwner,
+                    token: token,
+                    urlPrefix: urlPrefix,
+                    lang:"i18n_zh_CN"
+                },
+                isError: false
+            }
+        },
+        mounted: function () {
+            var _this = this;
+            _this.init();
+        },
+        methods: {
+            init: function(){
+                $.ajax({
+                    url: "",
+                    type: "get",
+                    success: function (response) {
+                        if (response.code == "0000") {
+                        } else if (response.code == "220") {
+                            _this.isError = true;
+                            console.log(response);
+                        } else if (!response.code) {
+                            _this.isError = true;
+                            console.log(response);
+                        }
+                    },
+                    error: function (response) {
+                        _this.isError = true;
+                    }
+                });
+            },
+            onSubmit: function (e) {
+                var url = "";
+                if ("10" == "1" || "10" == "2") {
+                    url = "" + url;
+                }
+                var _this = this;
+                var query = _this.query;
+                if (url.indexOf("?") > -1) {
+                    url = url.split("?")[0];
+                }
+                if (query.keyWord) {
+                    var query = new Base64().encode(JSON.stringify(query));
+                    window.open(url + "?query=" + query);
+                } else {
+                    alert("请填写搜索内容")
+                }
+            },
+        }
+    })
+</script></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="dingyou-navbar">
+  <div class="container">
+    <div class="row">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse"> <span class="sr-only">切换导航</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      </div>
+      <div class="collapse navbar-collapse" id="example-navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">首页 <b class=""></b></a>       
+<li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">部门概况<b class="caret"></b></a>
+  <ul class="dropdown-menu">
+    <li><a href="">部门介绍    </a></li>
+    <li><a href="">部门职责  </a></li>
+    <li><a href="">科室设置    </a></li>
+  </ul>
+</li>
+<li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">学科建设  <b class="caret"></b></a>
+  <ul class="dropdown-menu">
+    <li><a href="">学科概况
+    </a></li>
+    <li><a href="">重点学科
+    </a></li>
+    <li><a href="">规章制度
+    </a></li>
+    <li><a href="">学位点申报
+    </a></li>
+    <li><a href="">硕士学位点
+    </a></li>
+    <li><a href="">贡嘎计划学科
+    </a></li>
+  </ul>
+</li>
+
+<li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">招生工作<b class="caret"></b></a>
+  <ul class="dropdown-menu">
+    <li><a href="">招生动态</a></li>
+    <li><a href="">招生简章</a></li>
+    <li><a href="">招生咨询</a></li>
+    
+  </ul>
+</li>
+<li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">培养工作<b class="caret"></b></a>
+  <ul class="dropdown-menu">
+    <li><a href="">通知公告
+    </a></li>
+    <li><a href="">培养方案
+    </a></li>
+    <li><a href="">教学管理
+    </a></li>
+    <li><a href="">专业实践
+    </a></li>
+    <li><a href="">规章制度
+    </a></li>
+    <li><a href="">导师工作
+    </a></li>
+
+  </ul>
+</li>
+<li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">学位工作<b class="caret"></b></a>
+  <ul class="dropdown-menu">
+    <li><a href="">通知公告
+    </a></li>
+    <li><a href="">学位申请
+    </a></li>
+    <li><a href="">学位授予
+    </a></li>
+    <li><a href="">论文抽检
+    </a></li>
+    <li><a href="">规章制度
+    </a></li>
+    <li><a href="">优秀论文评选
+    </a></li>
+ 
+  </ul>
+</li>
+<li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">学生工作  <b class="caret"></b></a>
+  <ul class="dropdown-menu">
+    <li><a href="">通知公告</a></li>
+    <li><a href="">思政教育
+    </a></li>
+    <li><a href="">研究生会
+    </a></li>
+    <li><a href="">奖助管理
+    </a></li>
+    <li><a href="">研工动态
+    </a></li>
+    <li><a href="">校园文化
+    </a></li>
+    <li><a href="">规章制度
+    </a></li>
+    
+  </ul>
+</li>
+<li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">就业与档案<b class="caret"></b></a>
+  <ul class="dropdown-menu">
+    <li><a href="">通知公告
+    </a></li>
+    <li><a href="">就业创业
+    </a></li>
+    <li><a href="">招聘信息
+    </a></li>
+    <li><a href="">档案工作
+    </a></li>
+    <li><a href="">规章制度
+    </a></li>
+   
+  </ul>
+</li>
+
+ 
+</li>
+<li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">下载中心  <b class="caret"></b></a>
+  <ul class="dropdown-menu">
+    <li><a href="">学生工作
+    </a></li>
+    <li><a href="">导师相关
+    </a></li>
+    <li><a href="">综合工作
+    </a></li>
+    <li><a href="">招生录取相关
+    </a></li>
+    <li><a href="">学籍培养相关</a></li>
+    <li><a href="">学位监督工作</a></li>
+    <li><a href="">学科建设工作</a></li>
+  </ul>
+</li>
+</ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="dingyou-banner">
+  <div id="slideBox" class="slideBox">
+    <div class="bd">
+          <ul>
+            <!-- 轮播图 -->
+<li><a target="_blank" href="#"><img src="images/IMG_202409242324_1920x500.jpg" alt="" border="0" /></a></li>
+<li><a target="_blank" href="#"><img src="images/IMG_202409247190_1920x500.jpg" alt="" border="0" /></a></li>
+<li><a target="_blank" href="#"><img src="images/IMG_202409249771_1920x500.jpg" alt="" border="0" /></a></li>
+<li><a target="_blank" href="#"><img src="images/IMG_202409249771_1920x500.jpg" alt="" border="0" /></a></li>
+<li><a target="_blank" href="#"><img src="images/IMG_202409249771_1920x500.jpg" alt="" border="0" /></a></li>
+</ul>
+    </div>
+    <div class="hd">
+      <ul>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- 新闻动态 -->
+<div class="dingyou-gzdt">
+  <div class="container">
+    <div class="dingyou-gzdt-top">新闻动态<span> / New Dynamics</span>
+      <div class="dingyou-gzdt-top-more"><a target="_blank" href="">更多</a></div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 col-xs-12">
+      <div class="dingyou-gzdt-pic">
+          <div class="focus">
+            <div class="flexslider">
+              <ul class="slides">
+              <script language="javascript" src="js/centerCutImg.js"></script><script language="javascript" src="js/ajax.js"></script>
+<li><a href="" title="研究生处部门网站设计新闻动态,图片展示  ..." target="_blank"> <img src="images/IMG_202409242324_1920x500.jpg" alt="研究生处部门网站设计新闻动态,图片展示  ..." border="0" />
+<p class="flex-caption">研究生处部门网站设计新闻动态,图片展示  ...</p>
+</a></li>
+<li><a href="" title="研究生处部门网站设计新闻动态,图片展示  ..." target="_blank"> <img src="images/IMG_202409242324_1920x500.jpg" alt="研究生处部门网站设计新闻动态,图片展示  ..." border="0" />
+<p class="flex-caption">研究生处部门网站设计新闻动态,图片展示  ...</p>
+</a></li>
+<li><a href="" title="研究生处部门网站设计新闻动态,图片展示  ..." target="_blank"> <img src="images/IMG_202409242324_1920x500.jpg" alt="研究生处部门网站设计新闻动态,图片展示  ..." border="0" />
+<p class="flex-caption">研究生处部门网站设计新闻动态,图片展示  ...</p>
+</a></li>
+<li><a href="" title="研究生处部门网站设计新闻动态,图片展示  ..." target="_blank"> <img src="images/IMG_202409242324_1920x500.jpg" alt="研究生处部门网站设计新闻动态,图片展示  ..." border="0" />
+<p class="flex-caption">研究生处部门网站设计新闻动态,图片展示  ...</p>
+</a></li>
+<li><a href="" title="研究生处部门网站设计新闻动态,图片展示  ..." target="_blank"> <img src="images/IMG_202409242324_1920x500.jpg" alt="研究生处部门网站设计新闻动态,图片展示  ..." border="0" />
+  <p class="flex-caption">研究生处部门网站设计新闻动态,图片展示  ...</p>
+  </a></li>
+  <li><a href="" title="研究生处部门网站设计新闻动态,图片展示  ..." target="_blank"> <img src="images/IMG_202409242324_1920x500.jpg" alt="研究生处部门网站设计新闻动态,图片展示  ..." border="0" />
+  <p class="flex-caption">研究生处部门网站设计新闻动态,图片展示  ...</p>
+  </a></li>
+  <!-- <li><a href="" title="研究生处部门网站设计新闻动态,图片展示  ..." target="_blank"> <img src="images/IMG_202409242324_1920x500.jpg" alt="研究生处部门网站设计新闻动态,图片展示  ..." border="0" />
+    <p class="flex-caption">研究生处部门网站设计新闻动态,图片展示  ...</p>
+    </a></li> -->
+
+
+<script>_showDynClickBatch(['dynclicks_u5_28605','dynclicks_u5_28525','dynclicks_u5_25835','dynclicks_u5_24225','dynclicks_u5_24215','dynclicks_u5_24015'],[28605,28525,25835,24225,24215,24015],"wbnews", 1351386606)</script>
+
+              </ul>
+            </div>
+          </div>
+        </div> 
+      </div>
+      <div class="col-lg-6 col-xs-12">
+        <div class="dingyou-gzdt-list">
+          <ul><li>
+              <div class="dingyou-gzdt-list-time">
+                <div class="dingyou-gzdt-list-time-s1">
+                <script type="text/javascript">
+var str="2024-09-23"
+document.write(str.substr(8,10))
+</script>
+                </div>
+                <div class="dingyou-gzdt-list-time-s2">
+                <script type="text/javascript">
+var str="2024-09-23"
+document.write(str.substr(0,7))
+</script>
+                </div>
+              </div>
+              <div class="dingyou-gzdt-list-biaoti"><a target="_blank" href="" title="研究生处部门网站设计新闻动态,文字展示  ...">研究生处部门网站设计新闻动态,文字展示  ...</a></div>
+              <div class="dingyou-gzdt-list-txt">9月23日，研究生处部门网站设计新闻动态,文字展示  ...研究生处部门网站设计新闻动态,文字展示  ...研究生处部门网站设计新闻动态,文字展示  ...</div>
+            </li>
+            
+<li>
+              <div class="dingyou-gzdt-list-time">
+                <div class="dingyou-gzdt-list-time-s1">
+                <script type="text/javascript">
+var str="2024-09-23"
+document.write(str.substr(8,10))
+</script>
+                </div>
+                <div class="dingyou-gzdt-list-time-s2">
+                <script type="text/javascript">
+var str="2024-09-23"
+document.write(str.substr(0,7))
+</script>
+                </div>
+              </div>
+              <div class="dingyou-gzdt-list-biaoti"><a target="_blank" href="" title="研究生处部门网站设计新闻动态,文字展示  ...">研究生处部门网站设计新闻动态,文字展示  ...</a></div>
+              <div class="dingyou-gzdt-list-txt">9月23日，研究生处部门网站设计新闻动态,文字展示  ...研究生处部门网站设计新闻动态,文字展示  ...研究生处部门网站设计新闻动态,文字展示  ...</div>
+            </li>
+            
+<li>
+              <div class="dingyou-gzdt-list-time">
+                <div class="dingyou-gzdt-list-time-s1">
+                <script type="text/javascript">
+var str="2024-09-23"
+document.write(str.substr(8,10))
+</script>
+                </div>
+                <div class="dingyou-gzdt-list-time-s2">
+                <script type="text/javascript">
+var str="2024-09-23"
+document.write(str.substr(0,7))
+</script>
+                </div>
+              </div>
+              <div class="dingyou-gzdt-list-biaoti"><a target="_blank" href="" title="研究生处部门网站设计新闻动态,文字展示  ...">研究生处部门网站设计新闻动态,文字展示  ...</a></div>
+              <div class="dingyou-gzdt-list-txt">9月23日，研究生处部门网站设计新闻动态,文字展示  ...研究生处部门网站设计新闻动态,文字展示  ...研究生处部门网站设计新闻动态,文字展示  ...</div>
+            </li>
+            
+<li>
+              <div class="dingyou-gzdt-list-time">
+                <div class="dingyou-gzdt-list-time-s1">
+                <script type="text/javascript">
+var str="2024-09-23"
+document.write(str.substr(8,10))
+</script>
+                </div>
+                <div class="dingyou-gzdt-list-time-s2">
+                <script type="text/javascript">
+var str="2024-09-23"
+document.write(str.substr(0,7))
+</script>
+                </div>
+              </div>
+              <div class="dingyou-gzdt-list-biaoti"><a target="_blank" href="" title="研究生处部门网站设计新闻动态,文字展示  ...">研究生处部门网站设计新闻动态,文字展示  ...</a></div>
+              <div class="dingyou-gzdt-list-txt">9月23日，研究生处部门网站设计新闻动态,文字展示  ...研究生处部门网站设计新闻动态,文字展示  ...研究生处部门网站设计新闻动态,文字展示  ...</div>
+            </li>
+            
+<script>_showDynClickBatch(['dynclicks_u6_29265','dynclicks_u6_28625','dynclicks_u6_28605','dynclicks_u6_28585'],[29265,28625,28605,28585],"wbnews", 1351386606)</script>
+</ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dingyou-tzgg">
+  <div class="container">
+    <div class="row1">
+      <div class="col-lg-13">
+        <div class="dingyou-tzgg-top">通知公告<span> | Notice Announcement</span>
+        <div class="dingyou-dbgs-top-more"><a target="_blank" href="">更多+</a></div>
+        </div>
+      </div>
+   
+    
+        <div class="dingyou-tzgg-all">
+          <div class="dingyou-tzgg-all-list">
+            <div class="row">
+              <script>_showDynClickBatch(['dynclicks_u5_28605','dynclicks_u5_28525','dynclicks_u5_25835','dynclicks_u5_24225','dynclicks_u5_24215','dynclicks_u5_24015'],[28605,28525,25835,24225,24215,24015],"wbnews", 1351386606)</script>
+
+            </ul>
+          </div>
+        </div>
+      </div> 
+   
+    <div class="col-lg-6 col-xs-12">
+      <div class="dingyou-gzdt-list">
+        <ul><li>
+            <div class="dingyou-gzdt-list-time">
+              <div class="dingyou-gzdt-list-time-s1">
+              <script type="text/javascript">
+var str="2024-09-23"
+document.write(str.substr(8,10))
+</script>
+              </div>
+              <div class="dingyou-gzdt-list-time-s2">
+              <script type="text/javascript">
+var str="2024-09-23"
+document.write(str.substr(0,7))
+</script>
+              </div>
+            </div>
+            <div class="dingyou-gzdt-list-biaoti"><a target="_blank" href="" title="研究生处部门网站设计新闻动态,文字展示  ...">研究生处部门网站设计新闻动态,文字展示  ...</a></div>
+            <div class="dingyou-gzdt-list-txt">9月23日，研究生处部门网站设计新闻动态,文字展示  ...展示 </div>
+          </li>
+          
+<li>
+            <div class="dingyou-gzdt-list-time">
+              <div class="dingyou-gzdt-list-time-s1">
+              <script type="text/javascript">
+var str="2024-09-23"
+document.write(str.substr(8,10))
+</script>
+              </div>
+              <div class="dingyou-gzdt-list-time-s2">
+              <script type="text/javascript">
+var str="2024-09-23"
+document.write(str.substr(0,7))
+</script>
+              </div>
+            </div>
+            <div class="dingyou-gzdt-list-biaoti"><a target="_blank" href="" title="研究生处部门网站设计新闻动态,文字展示  ...">研究生处部门网站设计新闻动态,文字展示  ...</a></div>
+            <div class="dingyou-gzdt-list-txt">9月23日，研究生处部门网站设计新闻动态,文字展示  </div>
+          </li>
+          
+<li>
+            <div class="dingyou-gzdt-list-time">
+              <div class="dingyou-gzdt-list-time-s1">
+              <script type="text/javascript">
+var str="2024-09-23"
+document.write(str.substr(8,10))
+</script>
+              </div>
+              <div class="dingyou-gzdt-list-time-s2">
+              <script type="text/javascript">
+var str="2024-09-23"
+document.write(str.substr(0,7))
+</script>
+              </div>
+            </div>
+            <div class="dingyou-gzdt-list-biaoti"><a target="_blank" href="" title="研究生处部门网站设计新闻动态,文字展示  ...">研究生处部门网站设计新闻动态,文字展示  ...</a></div>
+            <div class="dingyou-gzdt-list-txt">9月23日，研究生处部门网站设计新闻动态,文字展示  ..</div>
+          </li>
+          
+<li>
+            <div class="dingyou-gzdt-list-time">
+              <div class="dingyou-gzdt-list-time-s1">
+              <script type="text/javascript">
+var str="2024-09-23"
+document.write(str.substr(8,10))
+</script>
+              </div>
+              <div class="dingyou-gzdt-list-time-s2">
+              <script type="text/javascript">
+var str="2024-09-23"
+document.write(str.substr(0,7))
+</script>
+              </div>
+            </div>
+            <div class="dingyou-gzdt-list-biaoti"><a target="_blank" href="" title="研究生处部门网站设计新闻动态,文字展示  ...">研究生处部门网站设计新闻动态,文字展示  ...</a></div>
+            <div class="dingyou-gzdt-list-txt">9月23日，研究生处部门网站设计新闻动态,文字展示  </div>
+          </li>
+                       
+              
+
+
+
+ 
+     <script type="text/javascript">
+</script>
+      <script type="text/javascript">
+</script></div>
+
+
+
+<!-- <div class="col-lg-4">
+  <div class="dingyou-tzgg-all-list-c">
+    <div class="dingyou-tzgg-all-list-time">
+      <div class="dingyou-tzgg-all-list-time-s1"><script type="text/javascript">
+var str="2024-09-23"
+document.write(str.substr(8,10))
+</script></div>
+      <div class="dingyou-tzgg-all-list-time-s2"><script type="text/javascript">
+var str="2024-09-23"
+document.write(str.substr(0,7))
+</script></div>
+    </div>
+    <div class="dingyou-tzgg-all-list-biaoti"><a target="_blank" href="" title="9月23日，研究生处部门网站设计公告通知,文字展示  ...">9月23日，研究生处部门网站设计公告通知,文字展示  ...</a></div>
+  </div>
+</div>
+<div class="col-lg-4">
+  <div class="dingyou-tzgg-all-list-c">
+    <div class="dingyou-tzgg-all-list-time">
+      <div class="dingyou-tzgg-all-list-time-s1"><script type="text/javascript">
+var str="2024-09-23"
+document.write(str.substr(8,10))
+</script></div>
+      <div class="dingyou-tzgg-all-list-time-s2"><script type="text/javascript">
+var str="2024-09-23"
+document.write(str.substr(0,7))
+</script></div>
+    </div>
+    <div class="dingyou-tzgg-all-list-biaoti"><a target="_blank" href="" title="9月23日，研究生处部门网站设计公告通知,文字展示  ...">9月23日，研究生处部门网站设计公告通知,文字展示  ...</a></div>
+  </div>
+</div> -->
+<!-- <div class="col-lg-4">
+  <div class="dingyou-tzgg-all-list-c">
+    <div class="dingyou-tzgg-all-list-time">
+      <div class="dingyou-tzgg-all-list-time-s1"><script type="text/javascript">
+var str="2024-09-23"
+document.write(str.substr(8,10))
+</script></div> -->
+      <!-- <div class="dingyou-tzgg-all-list-time-s2"><script type="text/javascript">
+var str="2024-09-23"
+document.write(str.substr(0,7))
+</script></div>
+    </div>
+    <div class="dingyou-tzgg-all-list-biaoti"><a target="_blank" href="" title="9月23日，研究生处部门网站设计公告通知,文字展示  ...">9月23日，研究生处部门网站设计公告通知,文字展示  ...</a></div>
+  </div>
+</div>
+<div class="col-lg-4">
+  <div class="dingyou-tzgg-all-list-c">
+    <div class="dingyou-tzgg-all-list-time">
+      <div class="dingyou-tzgg-all-list-time-s1"><script type="text/javascript">
+var str="2024-09-23"
+document.write(str.substr(8,10))
+</script></div>
+      <div class="dingyou-tzgg-all-list-time-s2"><script type="text/javascript">
+var str="2024-09-23"
+document.write(str.substr(0,7))
+</script></div>
+    </div>
+    <div class="dingyou-tzgg-all-list-biaoti"><a target="_blank" href="" title="9月23日，研究生处部门网站设计公告通知,文字展示  ...">9月23日，研究生处部门网站设计公告通知,文字展示  ...</a></div>
+  </div>
+</div>
+<div class="col-lg-4">
+  <div class="dingyou-tzgg-all-list-c">
+    <div class="dingyou-tzgg-all-list-time">
+      <div class="dingyou-tzgg-all-list-time-s1"><script type="text/javascript">
+var str="2024-09-23"
+document.write(str.substr(8,10))
+</script></div>
+      <div class="dingyou-tzgg-all-list-time-s2"><script type="text/javascript">
+var str="2024-09-23"
+document.write(str.substr(0,7))
+</script></div>
+    </div>
+    <div class="dingyou-tzgg-all-list-biaoti"><a target="_blank" href="" title="9月23日，研究生处部门网站设计公告通知,文字展示  ...">9月23日，研究生处部门网站设计公告通知,文字展示  ...</a></div>
+  </div>
+</div> -->
+
+
+<div class="dingyou-kjdh">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-14 col-xs-6"><span><i><img src="images/k9.jpg"></i><em><a href="" target="_blank">研究生招生信息网</a></em></span></div>
+      <div class="col-lg-14 col-xs-6"><span><i><img src="images/k3.jpg"></i><em><a href="" target="_blank">研究生管理信息系统</a></em></span></div>
+      <div class="col-lg-14 col-xs-6"><span><i><img src="images/k4.jpg"></i><em><a href="" target="_blank">学科建设与发展规划</a></em></span></div>
+      <div class="col-lg-14 col-xs-6"><span><i><img src="images/k6.jpg"></i><em><a href="" target="_blank">招生简章</a></em></span></div>
+      <!-- 4个为一模块
+      <div class="col-lg-3 col-xs-6"><span><i><img src="images/k9.jpg"></i><em><a href="" target="_blank">研究生招生信息网</a></em></span></div>
+      <div class="col-lg-3 col-xs-6"><span><i><img src="images/k3.jpg"></i><em><a href="" target="_blank">研究生管理信息系统</a></em></span></div>
+      <div class="col-lg-3 col-xs-6"><span><i><img src="images/k4.jpg"></i><em><a href="" target="_blank">学科建设与发展规划</a></em></span></div>
+      <div class="col-lg-3 col-xs-6"><span><i><img src="images/k6.jpg"></i><em><a href="" target="_blank">招生简章</a></em></span></div>
+       -->
+    </div>
+  </div>
+</div>
+    
+
+<script>_showDynClickBatch(['dynclicks_u7_29295','dynclicks_u7_29285','dynclicks_u7_29275','dynclicks_u7_29255','dynclicks_u7_29245','dynclicks_u7_29205','dynclicks_u7_29115','dynclicks_u7_29105','dynclicks_u7_29065','dynclicks_u7_29035','dynclicks_u7_29015','dynclicks_u7_28935'],[29295,29285,29275,29255,29245,29205,29115,29105,29065,29035,29015,28935],"wbnews", 1351386606)</script>
+</div>  
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-16">
+        <div class="tabbable" id="tabs-1">
+          <ul class="nav nav-tabs">
+            <li class="active"> <a href="#panel-1" data-toggle="tab">研究生招生</a> </li>
+            <li> <a href="#panel-2" data-toggle="tab">研究生培养</a> </li>
+            <li> <a href="#panel-3" data-toggle="tab">学科建设</a> </li>
+            <li> <a href="#panel-4" data-toggle="tab">学生风采</a> </li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane active" id="panel-1">
+              <div class="dingyou-tzgg-list">
+                <ul><li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li>          
+<li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li>          
+<li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li>          
+<li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li>          
+<li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li>          
+<li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li>          
+<script>_showDynClickBatch(['dynclicks_u8_28325','dynclicks_u8_28255','dynclicks_u8_26195','dynclicks_u8_25885','dynclicks_u8_24205','dynclicks_u8_23145'],[28325,28255,26195,25885,24205,23145],"wbnews", 1351386606)</script>
+</ul>
+              </div>
+            </div>
+            <div class="tab-pane" id="panel-2">
+              <div class="dingyou-tzgg-list">
+                <ul>
+                <div><li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li>          
+                  <li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li>          
+                  <li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li>          
+                  <li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li>          
+                  <li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li>          
+                  <li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li>             
+<script>_showDynClickBatch(['dynclicks_u9_25665','dynclicks_u9_25635','dynclicks_u9_23775','dynclicks_u9_18005','dynclicks_u9_11844','dynclicks_u9_10037'],[25665,25635,23775,18005,11844,10037],"wbnews", 1351386606)</script>
+</div>
+                </ul>
+              </div>
+            </div>
+            <div class="tab-pane" id="panel-3">
+              <div class="dingyou-tzgg-list">
+                <ul>
+                  <div><li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li>    
+                    <li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li>          
+                    <li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li>          
+                    <li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li>          
+                    <li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li>          
+                    <li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li>
+<script>_showDynClickBatch(['dynclicks_u10_29295','dynclicks_u10_29255','dynclicks_u10_29245','dynclicks_u10_29205','dynclicks_u10_29065','dynclicks_u10_29035'],[29295,29255,29245,29205,29065,29035],"wbnews", 1351386606)</script>
+</div>
+                </ul>
+              </div>
+            </div>
+            <div class="tab-pane" id="panel-4">
+              <div class="dingyou-tzgg-list">
+                <ul>
+                  <div><li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li>    
+                    <li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li>          
+                    <li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li>          
+                    <li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li>          
+                    <li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li>          
+                    <li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li>  
+<script>_showDynClickBatch(['dynclicks_u11_29275','dynclicks_u11_28695','dynclicks_u11_28615','dynclicks_u11_28565','dynclicks_u11_28465','dynclicks_u11_28205'],[29275,28695,28615,28565,28465,28205],"wbnews", 1351386606)</script>
+</div>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col1-lg-16">
+        <div class="tabbable" id="tabs-2">
+          <ul class="nav nav-tabs">
+            <li class="active"> <a href="#panel-2-1" data-toggle="tab">学位论文答辩公告</a> </li>
+            <li> <a href="#panel-2-2" data-toggle="tab">就业与档案</a> </li>
+            <li> <a href="#panel-2-3" data-toggle="tab">发展规划</a> </li>
+            <li> <a href="#panel-2-4" data-toggle="tab">下载中心</a> </li>
+          
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane active" id="panel-2-1">
+              <div class="dingyou-tzgg-list">
+                <ul>
+                  <div><li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li>    
+                    <li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li>          
+                    <li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li>          
+                    <li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li>          
+                    <li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li>          
+                    <li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li> 
+<script>_showDynClickBatch(['dynclicks_u12_29285','dynclicks_u12_28755','dynclicks_u12_28475','dynclicks_u12_28155','dynclicks_u12_25615','dynclicks_u12_25125'],[29285,28755,28475,28155,25615,25125],"wbnews", 1351386606)</script>
+</div>
+                </ul>
+              </div>
+            </div>
+            <div class="tab-pane" id="panel-2-2">
+              <div class="dingyou-tzgg-list">
+                <ul>
+                  <div><li><a target="_blank" href="">就业研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li>    
+                    <li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li>          
+                    <li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li>          
+                    <li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li>          
+                    <li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li>          
+                    <li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li> 
+<script>_showDynClickBatch(['dynclicks_u13_28925','dynclicks_u13_28405','dynclicks_u13_28395','dynclicks_u13_28285','dynclicks_u13_27535','dynclicks_u13_27525'],[28925,28405,28395,28285,27535,27525],"wbnews", 1351386606)</script>
+</div>
+                </ul>
+              </div>
+            </div>
+            <div class="tab-pane" id="panel-2-3">
+              <div class="dingyou-tzgg-list">
+                <ul>
+                  <div><li><a target="_blank" href="">发展规划研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li>    
+                    <li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li>          
+                    <li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li>          
+                    <li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li>          
+                    <li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li>          
+                    <li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li> 
+<script>_showDynClickBatch(['dynclicks_u14_29105','dynclicks_u14_28935','dynclicks_u14_28105','dynclicks_u14_26575','dynclicks_u14_25925','dynclicks_u14_25875'],[29105,28935,28105,26575,25925,25875],"wbnews", 1351386606)</script>
+</div>
+                </ul>
+              </div>
+            </div>
+            <div class="tab-pane" id="panel-2-4">
+              <div class="dingyou-tzgg-list">
+                <ul>
+                  <div><li><a target="_blank" href="">下载中心研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li>    
+                    <li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li>          
+                    <li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li>          
+                    <li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li>          
+                    <li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li>          
+                    <li><a target="_blank" href="">研究生处部门网站设计公告通知,文字通知...</a> <span>[09-23]</span></li> 
+<script>_showDynClickBatch(['dynclicks_u15_25745','dynclicks_u15_25605','dynclicks_u15_11614','dynclicks_u15_26075','dynclicks_u15_11120','dynclicks_u15_11119'],[25745,25605,11614,26075,11120,11119],"wbnews", 1351386606)</script>
+</div>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<div class="dingyou-kjdh"></div>
+  <div class="container">
+    <div class="row">
+      
+    </div>
+  </div>
+</div>
+   
+
+
+<div class="dingyou-foot">
+  <div class="container">
+    <div class="row">
+      <div class="dingyou-foot-lxwm-box col-xs-12">
+        <div class="dingyou-foot-lxwm">
+          <div class="dingyou-foot-lxwm-add"> <p class="dingyou-foot-lxwm-title">地址</p> <p>研究生处部门-乐山师范学院</p> </div>
+          <div class="dingyou-foot-lxwm-email"> <p class="dingyou-foot-lxwm-title">邮箱</p> <p>邮箱xxxxxxxxxx</p> </div>
+        </div>
+      </div>
+      <div class="dingyou-foot-link-box col-xs-12">
+        <div class="dingyou-foot-link">
+          <div class="dingyou-foot-link-title">友情链接</div>
+          <div class="dingyou-foot-link-s1">    
+    
+    
+    
+  
+
+    
+<script language="javascript">    
+<!--    
+    function doLinksu16(o)    
+    {    
+        var link=document.getElementsByName("su16")[0];    
+        var index=link.selectedIndex;    
+        if (index==-1 || index>=link.options.length)    
+        {    
+          return;    
+        }    
+        var value = link.options[index].value;    
+        var obj = document.getElementById("hu16");    
+        obj.href = value;
+        var wburlid =link.options[index].getAttribute("aa216466aa");
+        _addDynClicks('wburl',1351386606,wburlid)
+            
+                     obj.target = "_blank"
+                    
+         if(document.all){
+          obj.click();     
+        }         
+         else 
+        { 
+          window.open(value);
+         }
+       
+       if(o.selectedIndex != 0)    
+       {    
+           o.selectedIndex = 0;    
+       }    
+    }    
+-->    
+</script>  
+<table>    
+    <tr><td align="center">    
+            <span class="titlestyle216466"></span> <a id="hu16"></a>    
+            <select name="su16" class="selectstyle216466" onChange="doLinksu16(this)">    
+                <option value="">　　　--培养单位网站--</option> 
+                   <!-- 那个学院有研究生的链接那个学院 -->
+                <option vsbhrefname="value" aa216466aa="44998" value="">电子信息与人工智能学院   
+                  <!-- <option vsbhrefname="value" aa216466aa="44998" value="">电子信息与人工智能学院   -->
+                </select>    
+        </td><tr></table></div>
+          <div class="dingyou-foot-link-s2">    
+    
+    
+    
+  
+
+    
+<script language="javascript">    
+<!--    
+    function doLinksu17(o)    
+    {    
+        var link=document.getElementsByName("su17")[0];    
+        var index=link.selectedIndex;    
+        if (index==-1 || index>=link.options.length)    
+        {    
+          return;    
+        }    
+        var value = link.options[index].value;    
+        var obj = document.getElementById("hu17");    
+        obj.href = value;
+        var wburlid =link.options[index].getAttribute("aa216467aa");
+        _addDynClicks('wburl',1351386606,wburlid)
+            
+                     obj.target = "_blank"
+                    
+         if(document.all){
+          obj.click();     
+        }         
+         else 
+        { 
+          window.open(value);
+         }
+       
+       if(o.selectedIndex != 0)    
+       {    
+           o.selectedIndex = 0;    
+       }    
+    }    
+-->    
+</script>  
+<table>    
+    <tr><td align="center">    
+            <span class="titlestyle216467"></span> <a id="hu17"></a>    
+            <select name="su17" class="selectstyle216467" onChange="doLinksu17(this)">    
+                <option value="">　　　--教育类网站--</option>    
+                <option vsbhrefname="value" aa216467aa="45028" value=""> 教育部学位管理与研究生教育司   
+                <option vsbhrefname="value" aa216467aa="45027" value="">中国学位与研究生教育信息网   
+                <option vsbhrefname="value" aa216467aa="45025" value="">中国学位与研究生教育学会     
+                <option vsbhrefname="value" aa216467aa="45024" value="">中国研究生招生信息网  
+                <option vsbhrefname="value" aa216467aa="45026" value="">中国高等教育学生信息网
+    
+                 
+                </select>    
+        </td><tr></table></div>
+        </div>
+      </div>
+      <div class="dingyou-ewm-box col-xs-12">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><div class="dingyou-ewm"><img src="images/wx1.jpg" alt=""><span> &nbsp官方微信号</span></div></td>
+    <td><div class="dingyou-ewm"><img src="images/wx1.jpg" alt=""><span>&nbsp官方微信公众号</span></div></td>
+  </tr>
+</table>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="dingyou-copyright">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-xs-12 pl">版权所有 &#169; 研究生处部门-乐山师范学院 您是第<script language="javascript" src="js/engine.js"></script><script language="javascript" src="js/util.js"></script><script language="javascript" src="js/PageCounterDWR.js"></script><span id="a1015912" name="a1015912"></span>   
+
+<script>
+function getvisittimea1015912()
+{       
+    PageCounterDWR.getVisittime('1351386606','1230','IP_TOTAL','854321','10',callbackdataa1015912)
+}
+function callbackdataa1015912(data)
+{
+    document.getElementById("a1015912").innerHTML = data; 
+}
+getvisittimea1015912();
+</script>位访客！</div>
+      <div class="col-lg-6 col-xs-12 pr"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1277835830'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s96.cnzz.com/stat.php%3Fid%3D1277835830%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script></div>
+    </div>
+  </div>
+</div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/all.js"></script>
+</body>
+</html>
